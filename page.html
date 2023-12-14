@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/weather.css" />
+    <link rel="stylesheet" href="css/page.css" />
+    <title>현재의 심상을 기록하는 메모장</title>
+  </head>
+  <body style="font-family: Yunivers">
+    <button id="write" class="write_button">새 메모</button>
+    <hr />
+    <div id="pastMemo" class="pastMemo"></div>
+    <div class="blur-background">
+      <div id="modal" class="modal">
+        <div style="height: 6%">
+          <button id="submit" class="submitButton modalbutton">저장</button>
+          <button id="cancel" class="interButton modalbutton">몼</button>
+        </div>
+        <input id="title" type="text" maxlength="14" />
+        <textarea id="texts"></textarea>
+      </div>
+    </div>
+  </body>
+
+  <script src="js/memory.js"></script>
+  <script src="js/make.js"></script>
+  <script src="js/readMemory.js"></script>
+</html>
+<!--글쓰기를 모달로 띄우는 편이 나을 듯 함-->

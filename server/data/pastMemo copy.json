@@ -1,0 +1,44 @@
+{
+  "Memo": [
+    {
+      "title": "오늘은 눈이 왔습니다",
+      "date": 20231208,
+      "time": "15시 28분",
+      "context": "눈 오는 날",
+      "design": "snow",
+      "position": [35.1597903, 128.9976468]
+    },
+    {
+      "title": "",
+      "date": 20231201,
+      "time": "15시 28분",
+      "context": "눈 오는 날",
+      "design": "snow",
+      "position": [35.1597903, 128.98]
+    },
+    {
+      "title": "",
+      "date": 20231122,
+      "time": "15시 28분",
+      "context": "비 오는 날",
+      "design": "rain",
+      "position": [35.12, 128.9976468]
+    },
+    {
+      "title": "",
+      "date": 20231111,
+      "time": "15시 28분",
+      "context": "맑은 날",
+      "design": "sunny",
+      "position": [35.1597903, 128.9976468]
+    },
+    {
+      "title": "",
+      "date": 20231009,
+      "time": "15시 28분",
+      "context": "테스트 내용",
+      "design": "wind",
+      "position": [35.1597903, 128.9976468]
+    }
+  ]
+}
