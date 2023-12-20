@@ -203,3 +203,4 @@ const exporting = async () => {
 
 window.exporting = exporting;
 window.exporting = getDate();
+window.exporting = getGeolocation();

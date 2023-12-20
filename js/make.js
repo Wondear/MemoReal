@@ -22,27 +22,25 @@ context.addEventListener("input", () => {
     alert(`현재 ${maxLength}자, 최대길이 입니다.`);
   }
 });
-
 function newMemo() {
   if (confirm("현재 메모를 저장 하시겠습니까?")) {
+    let position = geolocation();
     let newData = {
       title: newtitle.value,
       date: parseInt(getDate()),
       time: getCurrentTime(),
       context: context.value,
       design: design,
-      position: [35.1597903, 128.9976468],
+      position: [position.coords.latitude, position.coords.longitude],
     };
     PostnewMemo(newData);
     closeModal();
   }
 }
-
 function cancelMemo() {
   if (confirm("작성을 취소하시겠습니까? 정보는 저장되지 않습니다."))
     closeModal();
 }
-
 function closeModal() {
   console.log("closeModal확인");
   blurBackground.style.opacity = 0;
@@ -51,7 +49,6 @@ function closeModal() {
   newtitle.value = "";
   context.value = "";
 }
-
 function writeMemo() {
   const modal = document.querySelector("#modal");
   exporting()
@@ -60,9 +57,7 @@ function writeMemo() {
       design = petchDesign(result); // 데이터 처리를 위해 값 보내기
       quitMemo.classList.add(`${design}`);
       submitMemo.classList.add(`${design}`);
-
       modal.classList.add(`${design}`);
-
       blurBackground.style.opacity = 1;
       blurBackground.style.pointerEvents = "auto";
     })
